@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        .menu {
+            width: 100%;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .box {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="menu">
+        Menu
+    </div>
+
+    <div class="content">
+        <div class="box">Content 1</div>
+        <div class="box">Content 2</div>
+        <div class="box">Content 3</div>
+    </div>
+
+</body>
+</html>

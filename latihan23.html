@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div Class Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header, .footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+            float: left;
+            width: 30%;
+            background-color: #e7e7e7;
+            padding: 10px;
+        }
+        .content {
+            float: left;
+            width: 70%;
+            padding: 10px;
+        }
+        .clear {
+            clear: both;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-between;
+        }
+        .grid div {
+            background-color: #e7e7e7;
+            padding: 10px;
+            margin: 5px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Layout 1 -->
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="clear"></div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <!-- Layout 2 -->
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <!-- Layout 3 -->
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="grid">
+            <div>Content 1</div>
+            <div>Content 2</div>
+            <div>Content 3</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Apple Books</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        
+        .store-name {
+            font-size: 250%;
+            font-weight: bold;
+        }
+        
+        .store-name span {
+            color: grey;
+        }
+        
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .auth-buttons a {
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .btn-login {
+            background-color: grey;
+        }
+        
+        .btn-register {
+            background-color: grey;
+        }
+        
+        .navbar {
+            background-color: grey;
+            width: 100%;
+        }
+        
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 10px 0;
+            gap: 30px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .menu li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header atas -->
+    <div class="header-top">
+        <div class="logo-container">
+            <img src="LOGOKU.jpg" alt="Logo Apple Books" />
+            <div class="store-name">Apple Books</div>
+        </div>
+    </div>
+    <!-- Menu navigasi -->
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Buku.html">Buku</a></li>
+            <li><a href="Majalah.html">Majalah</a></li>
+            <li><a href="Koran.html">Koran</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        #menu {
+            background-color: #e7e7e7;
+            padding: 10px;
+            text-align: left;
+            float: left;
+            width: 30%;
+            height: 200px;
+        }
+        #content {
+            background-color: #d7d7d7;
+            padding: 10px;
+            float: left;
+            width: 70%;
+            height: 200px;
+        }
+        #footer {
+            clear: both;
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            background-color: #c7c7c7;
+            padding: 10px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+
+    <div id="menu">
+        <h2>Menu</h2>
+    </div>
+
+    <div id="content">
+        <h2>Content</h2>
+    </div>
+
+    <div id="footer">
+        <h2>Footer</h2>
+    </div>
+
+    <div class="row">
+        <div class="column">Content 1</div>
+        <div class="column">Content 2</div>
+        <div class="column">Content 3</div>
+    </div>
+
+</body>
+</html>

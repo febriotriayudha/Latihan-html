@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh HTML Div Class dan ID</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .menu {
+            background-color: #f4b400;
+            width: 30%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .content {
+            background-color: #4285F4;
+            width: 70%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .footer {
+            clear: both;
+            background-color: #DB4437;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .layout2 {
+            clear: both;
+            margin-top: 20px;
+        }
+        .content2 {
+            background-color: #8E24AA;
+            padding: 10px;
+            margin: 5px;
+            box-sizing: border-box;
+            width: calc(33.333% - 10px);
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Layout 1 -->
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+
+    <div class="layout2">
+        <!-- Layout 2 -->
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="clear"></div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <div class="clear" style="height: 20px;"></div>
+
+    <div class="layout2">
+        <!-- Layout 3 -->
+        <div class="header">Header</div>
+        <div class="clear"></div>
+        <div class="content2">Content 1</div>
+        <div class="content2">Content 2</div>
+        <div class="content2">Content 3</div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>
