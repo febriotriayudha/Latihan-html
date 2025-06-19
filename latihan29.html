@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dune</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .book-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .book-cover {
+      flex: 1;
+      min-width: 200px;
+      margin-right: 20px;
+    }
+
+    .book-cover img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .details {
+      flex: 2;
+    }
+
+    .details p {
+      margin: 5px 0;
+    }
+
+    .price {
+      color: #0033cc;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .sinopsis {
+      margin-top: 20px;
+    }
+
+    .sinopsis h3 {
+      color: #0033cc;
+    }
+
+    .buy-button {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .buy-button button {
+      background-color: #0033cc;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .buy-button button:hover {
+      background-color: #001f80;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="book-info">
+      <div class="book-cover">
+        <img src="duneBook.jpeg" alt="Dune">
+      </div>
+      <div class="details">
+        <p><strong>Judul:</strong> Dune</p>
+        <p><strong>Pengarang:</strong> Frank Herbert</p>
+            <p><strong>Penerbit:</strong> Chilton Books</p>
+            <p><strong>Cetakan:</strong> sekitar 2.000 eksemplar</p>
+            <p><strong>Jumlah Halaman:</strong> 412</p>
+        <p class="price">Rp71.200</p>
+      </div>
+    </div>
+
+    <div class="sinopsis">
+      <h3>Sinopsis</h3>
+      <p>
+                Di masa depan yang jauh, galaksi dikuasai oleh kekaisaran feodal, dan planet paling berharga adalah Arrakis, juga dikenal sebagai Dune — satu-satunya sumber melange, rempah langka yang sangat berharga. Melange memperpanjang umur, meningkatkan kesadaran, dan memungkinkan perjalanan antarbintang.
+            </p>
+            <p>
+                Keluarga Atreides, dipimpin oleh Duke Leto Atreides, diberi wewenang oleh Kaisar untuk mengelola Arrakis, menggantikan keluarga rival mereka, Harkonnen. Tapi ini adalah jebakan politik. Duke Leto dikhianati, dan putranya, Paul Atreides, melarikan diri ke gurun Arrakis bersama ibunya, Lady Jessica.
+            </p>
+    </div>
+
+    <div class="buy-button">
+      <button>Beli Sekarang</button>
+    </div>
+  </div>
+</body>
+</html>
