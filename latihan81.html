@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Majalah The Science Observer</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .magazine-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .magazine-cover {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .magazine-cover img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .details {
+      flex: 2;
+    }
+
+    .details p {
+      margin: 6px 0;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .price {
+      color: #003366;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .sinopsis {
+      margin-top: 25px;
+    }
+
+    .sinopsis h3 {
+      color: #003366;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .buy-button {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .buy-button button {
+      background-color: #003366;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button button:hover {
+      background-color: #001f4d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="magazine-info">
+      <div class="magazine-cover">
+        <img src="The Science Observer.jpg" alt="The Science Observer">
+      </div>
+      <div class="details">
+        <p><strong>Judul:</strong> The Science Observer – Edisi Juli 2025</p>
+        <p><strong>Penerbit:</strong> Observer Media Science Group</p>
+        <p><strong>Tahun Terbit:</strong> 2025</p>
+        <p><strong>Edisi:</strong> Volume 12, Nomor 7</p>
+        <p><strong>Jumlah Halaman:</strong> 128</p>
+        <p class="price">Rp50.000</p>
+      </div>
+    </div>
+
+    <div class="sinopsis">
+      <h3>Deskripsi Singkat</h3>
+      <p>
+        The Science Observer adalah majalah bulanan yang mengulas penemuan ilmiah terbaru, analisis teknologi mutakhir, serta wawasan tentang isu-isu global dari perspektif ilmiah. Diperuntukkan bagi pembaca umum dan profesional, majalah ini menjembatani dunia riset dengan kehidupan sehari-hari.
+      </p>
+      <p>
+        Dalam edisi Juli 2025, kami membahas pengaruh sinyal kuantum terhadap komunikasi global, eksplorasi planet layak huni baru di luar tata surya, serta tantangan etis penggunaan AI dalam bidang medis. Rubrik khusus juga menampilkan profil ilmuwan muda Indonesia yang mendunia di bidang bioinformatika.
+      </p>
+    </div>
+
+    <div class="buy-button">
+      <button>Beli Sekarang</button>
+    </div>
+  </div>
+</body>
+</html>
