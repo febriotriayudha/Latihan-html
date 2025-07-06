@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: rgb(255, 255, 255);
+      background-color: #fff;
     }
 
     /* Topbar */
     .topbar {
-      background-color: black;
-      padding: 10px;
+      background-color: #000;
+      padding: 10px 20px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -22,144 +22,172 @@
 
     .topbar a {
       padding: 8px 15px;
-      color: white;
+      color: #fff;
       text-decoration: none;
       margin-left: 10px;
       border-radius: 5px;
       font-weight: bold;
+      transition: background 0.3s;
     }
 
     .topbar .register {
-      background-color: blue;
+      background-color: #007bff;
     }
 
     .topbar .login {
-      background-color: red;
+      background-color: #dc3545;
+    }
+
+    .topbar a:hover {
+      opacity: 0.8;
     }
 
     /* Header */
     .header {
       display: flex;
       align-items: center;
-      padding: 10px;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
     }
 
     .header img {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
     }
 
     .header h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 28px;
     }
 
-    .header span {
+    .header .title {
       color: rgb(255, 136, 0);
     }
 
     /* Navbar */
     .navbar {
       background-color: rgb(0, 38, 255);
-      padding: 10px 0;
     }
 
     .menu {
       list-style: none;
       margin: 0;
-      padding: 0;
+      padding: 10px;
       display: flex;
       justify-content: center;
       gap: 40px;
     }
 
+    .menu li {
+      position: relative;
+    }
+
     .menu li a {
-      color: rgb(253, 252, 252);
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
+      padding: 8px;
+      display: block;
     }
 
     .menu li a:hover {
       text-decoration: underline;
     }
 
-    /* Apple Books Header */
-    #apple-header {
-      padding: 20px;
-      display: flex;
-      align-items: center;
-    }
-
-    #apple-header img {
-      width: 250px;
-      height: 250px;
-    }
-
-    #apple-header .title {
-      font-size: 50px;
-      color: black;
-      font-weight: bold;
-      margin-left: 20px;
-    }
-
-    /* Produk Style */
-    .produk {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 0 20px 40px 20px;
-    }
-
-    .produk2 img {
-      width: 100px;
-      height: 150px;
-    }
-
-    .produk2 p {
-      margin: 5px 0;
-      text-align: center;
-    }
-
-    h2.title {
-      text-align: center;
-      font-size: 32px;
-      margin-top: 40px;
-    }
-
+    /* Submenu */
     .submenu {
       display: none;
       position: absolute;
-      background-color: rgb(2, 2, 2);
-      list-style: none;
+      background-color: #111;
       padding: 0;
-      margin: 0;
-      z-index: 1000;
-      min-width: 150px;
+      list-style: none;
+      min-width: 180px;
     }
 
     .menu li:hover > .submenu {
       display: block;
     }
 
-    .submenu li {
-      position: relative;
-    }
-
     .submenu li a {
-      color: rgb(255, 255, 255);
       padding: 10px;
-      text-decoration: none;
+      color: white;
     }
 
     .submenu li a:hover {
-      background-color: rgb(173, 170, 170);
+      background-color: #666;
     }
 
     .submenu .submenu {
       left: 100%;
       top: 0;
+    }
+
+    /* Produk */
+    h2.title {
+      text-align: center;
+      font-size: 32px;
+      margin: 40px 0 20px;
+    }
+
+    .produk {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0 20px 40px;
+    }
+
+    .produk2 {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 150px;
+    }
+
+    .produk2:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+
+    .produk2 img {
+      width: 100px;
+      height: 150px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .produk2 p {
+      margin: 8px 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Responsive Basic */
+    @media (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .produk {
+        justify-content: center;
+      }
+
+      .produk2 {
+        width: 100%;
+        max-width: 250px;
+      }
     }
   </style>
 </head>
@@ -167,73 +195,96 @@
 
   <!-- Topbar -->
   <div class="topbar">
-    <a href="#" class="register">Registrasi</a>
-    <a href="#" class="login">Login</a>
+    <a href="register.html" class="register">Registrasi</a>
+    <a href="login.html" class="login">Login</a>
   </div>
 
   <!-- Logo Header -->
   <div class="header">
-    <img src="logo Apple Books.jpg" alt="logo Apple Books" />
-    <h1><span class="title">Apple</span><span>Books</span></h1>
+    <img src="logo_Apple Books.png" alt="logo Apple Books" />
+    <h1><span class="title">Apple</span> Books</h1>
   </div>
 
   <!-- Navigasi -->
   <nav class="navbar">
     <ul class="menu">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Buku</a>
-         <ul class="submenu">
-          <li>
-            <a href="#">Fiksi</a>
-            <ul class="submenu">
-              <li><a href="#">Fiksi Ilmiah</a></li>
-              <li><a href="#">Fiksi Fantasi</a></li>
-              <li><a href="#">Fiksi Romantis</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Non Fiksi</a>
-            <ul class="submenu">
-              <li><a href="#">Buku Kesehatan</a></li>
-              <li><a href="#">Buku Ekonomi</a></li>
-              <li><a href="#">Buku Sejarah</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#">Majalah</a>
+      <li>
+        <a href="#">Buku</a>
         <ul class="submenu">
           <li>
             <a href="#">Fiksi</a>
             <ul class="submenu">
-              <li><a href="#">Cerita Pendek</a></li>
-              <li><a href="#">Majalah Sastra</a></li>
-              <li><a href="#">Majalah Fantasi</a></li>
+              <li><a href="latihan30.html">Fiksi Ilmiah</a></li>
+              <li><a href="latihan35.html">Fiksi Fantasi</a></li>
+              <li><a href="latihan41.html">Fiksi Romantis</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Non Fiksi</a>
             <ul class="submenu">
-              <li><a href="#">Artikel Ilmiah</a></li>
-              <li><a href="#">Artikel Pengembangan Diri</a></li>
-              <li><a href="#">Artikel Gaya Hidup</a></li>
+              <li><a href="latihan47.html">Buku Kesehatan</a></li>
+              <li><a href="latihan52.html">Buku Ekonomi</a></li>
+              <li><a href="latihan57.html">Buku Sejarah</a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li><a href="#">Koran</a></li>
+      <li>
+        <a href="#">Majalah</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">Fiksi</a>
+            <ul class="submenu">
+              <li><a href="latihan62.html">Cerita Pendek</a></li>
+              <li><a href="latihan67.html">Majalah Sastra</a></li>
+              <li><a href="latihan73.html">Majalah Fantasi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Non Fiksi</a>
+            <ul class="submenu">
+              <li><a href="latihan79.html">Artikel Ilmiah</a></li>
+              <li><a href="latihan83.html">Artikel Pengembangan Diri</a></li>
+              <li><a href="latihan88.html">Artikel Gaya Hidup</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Koran</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">Fiksi</a>
+            <ul class="submenu">
+              <li><a href="latihan93.html">Cerita Pendek</a></li>
+              <li><a href="latihan98.html">Cerbung</a></li>
+              <li><a href="latihan103.html">Puisi Fiksi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Non Fiksi</a>
+            <ul class="submenu">
+              <li><a href="latihan108.html">Berita Aktual</a></li>
+              <li><a href="latihan113.html">Artikel Opini</a></li>
+              <li><a href="latihan118.html">Laporan Investigasi</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
+  <!-- Konten Buku -->
   <h2 class="title">Buku Best Seller</h2>
   <div class="produk">
     <div class="produk2">
-      <img src="Bandit-bandit berkelaz.jpg" alt="Bandit-bandit berkelas" />
+      <img src="Bandit-bandit berkelas.jpg" alt="Bandit-bandit berkelas" />
       <p>Bandit-bandit berkelas</p>
       <p><b>Rp50.000</b></p>
     </div>
     <div class="produk2">
-      <img src="Negeri para bedebah.jpg " alt="Negeri para bedebah" />
+      <img src="Negeri para bedebah.jpg" alt="Negeri para bedebah" />
       <p>Negeri para bedebah</p>
       <p><b>Rp60.000</b></p>
     </div>
@@ -244,6 +295,7 @@
     </div>
   </div>
 
+  <!-- Konten Majalah -->
   <h2 class="title">Majalah Best Seller</h2>
   <div class="produk">
     <div class="produk2">
@@ -262,6 +314,11 @@
       <p><b>Rp40.000</b></p>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Apple Books. All rights reserved.
+  </footer>
 
 </body>
 </html>
